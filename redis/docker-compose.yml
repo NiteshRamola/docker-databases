@@ -1,6 +1,6 @@
 # docker compose file for redis and redis-insight with port mapping
 
-version: '3.7'
+# version: "3.7"
 
 services:
   redis:
@@ -12,15 +12,14 @@ services:
     volumes:
       - redis-volume-data:/data
 
-
-  redisinsight:
-    image: redislabs/redisinsight:latest
-    container_name: redisinsight
-    ports:
-      - 8001:8001
-    volumes:
-      - redisinsight-data:/db
+  # redisinsight:
+  #   image: redislabs/redisinsight:latest
+  #   container_name: redisinsight
+  #   ports:
+  #     - 8001:8001
+  #   volumes:
+  #     - redisinsight-data:/db
 
 volumes:
   redis-volume-data:
-  redisinsight-data:
+  # redisinsight-data:

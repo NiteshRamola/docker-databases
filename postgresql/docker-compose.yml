@@ -1,4 +1,4 @@
-version: "3"
+# version: "3"
 services:
   db:
     image: postgres
@@ -13,8 +13,8 @@ services:
       - POSTGRES_USER=nitesh
       - POSTGRES_PASSWORD=ramola
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8080:8080
